@@ -1,4 +1,4 @@
-# Engineering Interview Rubrics
+# eng-rubrics
 
 Open-source interview rubrics for hiring engineering leaders. Structured, legally defensible assessments aligned to UK-SPEC and SFIA frameworks. Each rubric: 2 pages, 5 competency areas, 1 scorecard. Covers ICs through to Heads of Engineering. Built for consistency, fairness, and repeatability.
 
@@ -6,7 +6,7 @@ Open-source interview rubrics for hiring engineering leaders. Structured, legall
 
 ## Why This Exists
 
-Read the **[Manifesto](MANIFESTO.md)** — the principles, vision, and boundaries of eng-rubrics.
+Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries of eng-rubrics.
 
 ---
 
@@ -42,16 +42,14 @@ Rubrics define *what* to assess, not *how* to ask. Interviewers choose their own
 
 These rubrics are aligned to recognised professional standards:
 
-- [UK-SPEC](https://www.engc.org.uk/standards-guidance/standards/uk-spec/) — UK Standard for Professional Engineering Competence
-- [SFIA](https://sfia-online.org/) — Skills Framework for the Information Age
+- [UK-SPEC](https://www.engc.org.uk/standards-guidance/standards/uk-spec/) - UK Standard for Professional Engineering Competence
+- [SFIA](https://sfia-online.org/) - Skills Framework for the Information Age
 
 ---
 
 ## Contributing
 
-We welcome contributions. Please read our contributing guidelines before submitting a pull request.
-
-*Coming soon: CONTRIBUTING.md*
+We welcome contributions from practitioners. Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** before submitting a pull request.
 
 ---
 
@@ -59,4 +57,4 @@ We welcome contributions. Please read our contributing guidelines before submitt
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-You're free to use, adapt, and share these rubrics—including commercially—with attribution to this project.
+You're free to use, adapt, and share these rubrics-including commercially-with attribution to this project.
