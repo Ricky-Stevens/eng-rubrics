@@ -1,0 +1,84 @@
+name: Build Rubrics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'rubrics/**.md'
+      - '!rubrics/_TEMPLATE.md'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Install LaTeX (for PDF generation)
+        run: |
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
+
+      - name: Create output directory
+        run: mkdir -p dist
+
+      - name: Convert rubrics to PDF and DOCX
+        run: |
+          for file in rubrics/*.md; do
+            # Skip the template
+            if [[ "$file" == *"_TEMPLATE"* ]]; then
+              continue
+            fi
+            
+            filename=$(basename "$file" .md)
+            
+            echo "Converting $filename..."
+            
+            # Create role-specific output folder
+            mkdir -p "dist/${filename}"
+            
+            # Generate PDF
+            pandoc "$file" \
+              -o "dist/${filename}/${filename}.pdf" \
+              --pdf-engine=pdflatex \
+              -V geometry:margin=1in \
+              -V fontsize=11pt
+            
+            # Generate DOCX
+            pandoc "$file" \
+              -o "dist/${filename}/${filename}.docx"
+            
+            echo "✓ Generated dist/${filename}/${filename}.pdf and .docx"
+          done
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rubrics
+          path: dist/
+          retention-days: 7  # Short retention - Releases are permanent
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Rubrics Build ${{ steps.date.outputs.date }}
+          body: |
+            Automated build of eng-rubrics.
+            
+            Download the PDF or DOCX version for each role below.
+          files: dist/*
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
