@@ -1,0 +1,70 @@
+% eng-rubrics PDF styling
+% Included via pandoc --include-in-header
+
+% Colors
+\usepackage{xcolor}
+\definecolor{engblue}{HTML}{1F4E79}
+\definecolor{headerblue}{HTML}{2E75B6}
+\definecolor{lightgray}{HTML}{F2F2F2}
+\definecolor{tableborder}{HTML}{9CC2E5}
+
+% Section heading styling
+\usepackage{titlesec}
+
+% H1 - Main title (blue, large, with rule below)
+\titleformat{\section}
+  {\color{engblue}\normalfont\Large\bfseries}
+  {}{0em}{}
+  [\color{engblue}\titlerule]
+
+% H2 - Competency areas (blue, medium)
+\titleformat{\subsection}
+  {\color{engblue}\normalfont\large\bfseries}
+  {}{0em}{}
+
+% H3 - Sub-sections (blue, smaller)
+\titleformat{\subsubsection}
+  {\color{headerblue}\normalfont\normalsize\bfseries}
+  {}{0em}{}
+
+% Reduce spacing around headings
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt}{4pt}
+
+% Table styling
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+
+% Make tables full width
+\setlength{\tabcolsep}{6pt}
+
+% Style for table header rows
+\let\oldtoprule\toprule
+\renewcommand{\toprule}{\rowcolor{headerblue}\oldtoprule}
+
+% Paragraph spacing (tighter)
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+% List styling (tighter)
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=1.5em}
+\setlist[itemize]{label=\textbullet}
+
+% Font (use Arial-like sans-serif)
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+
+% Ensure horizontal rules appear
+\usepackage{mdframed}
+
+% Link colors
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=engblue,
+  urlcolor=engblue
+}
