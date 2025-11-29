@@ -6,8 +6,8 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 
 ---
 
-### A - Performance Management & Team Development 
-SFIA PEMT / PDSV Level 5–6
+## A - Performance Management & Team Development 
+#### 00:10 - SFIA PEMT / PDSV Level 5–6
 
 The ability to form, lead, and develop engineering teams. This includes setting objectives, providing feedback, managing underperformance, and creating growth opportunities for team members.
 
@@ -23,8 +23,8 @@ The ability to form, lead, and develop engineering teams. This includes setting 
 
 ---
 
-### B - Technical Direction & Architecture Input
-SFIA ARCH Level 4–5
+## B - Technical Direction & Architecture Input
+#### 00:15 - SFIA ARCH Level 4–5
 
 The ability to provide technical leadership without being hands-on. This includes contributing to architectural decisions, understanding trade-offs, and ensuring technical quality and direction within the team.
 
@@ -40,8 +40,8 @@ The ability to provide technical leadership without being hands-on. This include
 
 ---
 
-### C - Delivery & Accountability
-SFIA DLMG Level 5–6
+## C - Delivery & Accountability
+#### 00:20 - SFIA DLMG Level 5–6
 
 The ability to own delivery outcomes for the team. This includes planning, prioritisation, managing dependencies, and ensuring the team meets commitments while maintaining sustainable pace.
 
@@ -57,8 +57,8 @@ The ability to own delivery outcomes for the team. This includes planning, prior
 
 ---
 
-### D - Stakeholder Communication & Influence
-SFIA RLMT Level 5–6
+## D - Stakeholder Communication & Influence
+#### 00:25 - SFIA RLMT Level 5–6
 
 The ability to communicate effectively with diverse audiences-engineers, product, executives, and external stakeholders. This includes influencing decisions, managing expectations, and representing the team.
 
@@ -74,8 +74,8 @@ The ability to communicate effectively with diverse audiences-engineers, product
 
 ---
 
-### E - Hiring & Team Composition
-SFIA RESC Level 5–6
+## E - Hiring & Team Composition
+#### 00:30 - SFIA RESC Level 5–6
 
 The ability to build and shape the team through hiring, org design, and workforce planning. This includes defining roles, running effective hiring processes, and making difficult decisions about team composition.
 
