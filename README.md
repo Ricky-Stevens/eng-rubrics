@@ -6,7 +6,7 @@ Open-source interview rubrics for hiring engineering leaders. Structured, legall
 
 ## Why This Exists
 
-*Coming soon: The manifesto behind eng-rubrics.*
+Read the **[Manifesto](MANIFESTO.md)** — the principles, vision, and boundaries of eng-rubrics.
 
 ---
 
