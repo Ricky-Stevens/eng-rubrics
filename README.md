@@ -18,14 +18,9 @@ Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries 
 
 ## Available Rubrics
 
-| Role | Framework | Download |
-|------|-----------|----------|
-| [Engineering Manager](rubrics/engineering-manager.md) | SFIA 9 | [Latest Release](../../releases/latest) |
-| Senior Engineer | TBD | 📋 Planned |
-| Staff Engineer | TBD | 📋 Planned |
-| Head of Engineering | UK-SPEC | 📋 Planned |
-
-PDF and DOCX versions are automatically generated on each merge to `main` and published to [Releases](../../releases).
+| Role | Framework | Markdown | PDF | Docx |
+|------|-----------|----------|----------|----------|
+| Engineering Manager | SFIA 9 | [.MD](rubrics/engineering-manager.md) | [.PDF](dist/engineering-manager/engineering-manager.pdf) |  [.DOCX](dist/engineering-manager/engineering-manager.docx) |
 
 ---
 
