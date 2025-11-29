@@ -1,4 +1,4 @@
-# eng-rubrics
+# Engineering Interview Rubrics
 
 Open-source interview rubrics for hiring engineering leaders. Structured, legally defensible assessments aligned to UK-SPEC and SFIA frameworks. Each rubric: 2 pages, 5 competency areas, 1 scorecard. Covers ICs through to Heads of Engineering. Built for consistency, fairness, and repeatability.
 
