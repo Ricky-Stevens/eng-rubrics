@@ -1,6 +1,6 @@
-# eng-rubrics
+# Engineering Interview Rubrics
 
-Open-source interview rubrics for hiring engineering leaders. Structured, legally defensible assessments aligned to UK-SPEC and SFIA frameworks. Each rubric: 2 pages, 5 questions, 1 scorecard. Covers ICs through to Heads of Engineering. Built for consistency, fairness, and repeatability.
+Open-source interview rubrics for hiring engineering leaders. Structured, legally defensible assessments aligned to UK-SPEC and SFIA frameworks. Each rubric: 2 pages, 5 competency areas, 1 scorecard. Covers ICs through to Heads of Engineering. Built for consistency, fairness, and repeatability.
 
 ---
 
@@ -31,8 +31,10 @@ Read the **[Manifesto](MANIFESTO.md)** — the principles, vision, and boundarie
 
 Every rubric follows the same format:
 
-- **Page 1:** Interview format, timing, and 5 structured questions with evaluation criteria
-- **Page 2:** Scoring rubric with behavioural anchors (1–5 scale) and pass threshold
+- **Page 1:** 5 competency areas with evaluation criteria and behavioural anchors
+- **Page 2:** Scoring rubric with seniority thresholds (1–5 scale)
+
+Rubrics define *what* to assess, not *how* to ask. Interviewers choose their own questions using the STAR method.
 
 ---
 
