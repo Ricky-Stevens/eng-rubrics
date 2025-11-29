@@ -130,12 +130,13 @@ Rubrics define criteria, not questions. Do not include interview questions in th
 
 1. Fork the repository
 2. Create a new branch: `rubric/[role-name]` (e.g., `rubric/staff-engineer`)
-3. Add your rubric in the `/rubrics` directory using the naming convention: `[role-name].md`
-4. Ensure your rubric meets all requirements above
-5. Submit a pull request with:
+3. Add your rubric as `/rubrics/[role-name].md` using the [template](rubrics/_TEMPLATE.md)
+4. Submit a pull request with:
    - A clear title: `Add rubric: [Role Name]`
    - A description explaining the framework alignment and target seniority levels
    - Any context on why this role needs a rubric
+
+PDF and DOCX versions are generated automatically when your PR is merged.
 
 ### For Improvements
 
@@ -148,7 +149,7 @@ Rubrics define criteria, not questions. Do not include interview questions in th
 
 1. Fork the repository
 2. Create a new branch: `questions/[role-name]`
-3. Add your question bank in the `/questions` directory using: `[role-name]-questions.md`
+3. Add your question bank as `/rubrics/[role-name]-questions.md`
 4. Submit a pull request
 
 ---
@@ -162,7 +163,7 @@ All contributions are reviewed by maintainers. We assess:
 - **Behavioural anchors** - Are scores defined by observable evidence, not opinion?
 - **Clarity** - Is it clear enough for any interviewer to use consistently?
 
-We may request changes before merging. This isn't personal - it's about maintaining the standard.
+We may request changes before merging. This isn't personal-it's about maintaining the standard.
 
 ---
 
