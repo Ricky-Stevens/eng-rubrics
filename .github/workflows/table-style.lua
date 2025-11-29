@@ -1,6 +1,6 @@
 -- table-style.lua
 -- Replaces Pandoc tables with custom styled LaTeX tables
--- Blue header row, vertical borders, proper cell padding
+-- Pale blue header row, black borders, proper cell padding
 
 -- Escape special LaTeX characters
 local function escape_latex(text)
@@ -32,13 +32,13 @@ function Table(tbl)
   -- Preamble with styling
   table.insert(latex_lines, "\\begin{table}[H]")
   table.insert(latex_lines, "\\centering")
-  table.insert(latex_lines, "\\renewcommand{\\arraystretch}{1.8}")
+  table.insert(latex_lines, "\\renewcommand{\\arraystretch}{2.0}")
   table.insert(latex_lines, "\\setlength{\\tabcolsep}{12pt}")
-  table.insert(latex_lines, "\\arrayrulecolor{borderblue}")
+  table.insert(latex_lines, "\\arrayrulecolor{black}")
   table.insert(latex_lines, "\\begin{tabular}{" .. colspec .. "}")
   table.insert(latex_lines, "\\hline")
   
-  -- Header row with blue background
+  -- Header row with pale blue background, black bold text, larger font
   if tbl.head and tbl.head.rows and #tbl.head.rows > 0 then
     for _, row in ipairs(tbl.head.rows) do
       local header_cells = {}
@@ -48,9 +48,9 @@ function Table(tbl)
         if cell then
           cell_text = escape_latex(pandoc.utils.stringify(cell.contents))
         end
-        table.insert(header_cells, "\\textcolor{white}{\\textbf{" .. cell_text .. "}}")
+        table.insert(header_cells, "\\large\\textbf{" .. cell_text .. "}")
       end
-      table.insert(latex_lines, "\\rowcolor{tablebg}" .. table.concat(header_cells, " & ") .. " \\\\")
+      table.insert(latex_lines, "\\rowcolor{tableheaderbg}" .. table.concat(header_cells, " & ") .. " \\\\")
     end
     table.insert(latex_lines, "\\hline")
   end
