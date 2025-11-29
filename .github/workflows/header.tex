@@ -7,7 +7,7 @@
 \usepackage{xcolor}
 \definecolor{engblue}{HTML}{1F4E79}
 \definecolor{headerblue}{HTML}{2E75B6}
-\definecolor{tablebg}{HTML}{2E75B6}
+\definecolor{tableheaderbg}{HTML}{BDD7EE}
 \definecolor{lightgray}{HTML}{F2F2F2}
 \definecolor{borderblue}{HTML}{9CC2E5}
 
@@ -16,9 +16,9 @@
 % ============================================
 \usepackage{titlesec}
 
-% H1 - Main title (blue, large, no rule)
+% H1 - Main title (blue, larger)
 \titleformat{\section}
-  {\color{engblue}\normalfont\Large\bfseries}
+  {\color{engblue}\normalfont\LARGE\bfseries}
   {}{0em}{}
 
 % H2 - Competency areas (blue, medium, no rule)
@@ -35,11 +35,11 @@
 \titleformat{\paragraph}[block]
   {\normalfont\small\itshape}
   {}{0em}{}
-\titlespacing*{\paragraph}{0pt}{4pt}{6pt}
+\titlespacing*{\paragraph}{0pt}{0pt}{6pt}
 
 % Reduce spacing around headings
 \titlespacing*{\section}{0pt}{12pt}{4pt}
-\titlespacing*{\subsection}{0pt}{14pt}{2pt}
+\titlespacing*{\subsection}{0pt}{14pt}{0pt}
 \titlespacing*{\subsubsection}{0pt}{10pt}{4pt}
 
 % ============================================
