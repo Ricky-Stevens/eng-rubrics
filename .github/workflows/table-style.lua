@@ -7,10 +7,10 @@ function Table(tbl)
     return tbl
   end
 
-  -- Count columns
+  -- Count columns from colspecs
   local num_cols = #tbl.colspecs
   
-  -- Build column spec with vertical borders: |l|l|l|l|l|l|
+  -- Build column spec with vertical borders
   local colspec = "|"
   for i = 1, num_cols do
     colspec = colspec .. "l|"
@@ -30,15 +30,18 @@ function Table(tbl)
   
   -- Header row with blue background
   if tbl.head and tbl.head.rows and #tbl.head.rows > 0 then
-    table.insert(latex_lines, "\\rowcolor{tablebg}")
-    local header_cells = {}
     for _, row in ipairs(tbl.head.rows) do
-      for _, cell in ipairs(row.cells) do
-        local cell_text = pandoc.utils.stringify(cell.contents)
+      local header_cells = {}
+      for i = 1, num_cols do
+        local cell = row.cells[i]
+        local cell_text = ""
+        if cell then
+          cell_text = pandoc.utils.stringify(cell.contents)
+        end
         table.insert(header_cells, "\\textcolor{white}{\\textbf{" .. cell_text .. "}}")
       end
+      table.insert(latex_lines, "\\rowcolor{tablebg}" .. table.concat(header_cells, " & ") .. " \\\\")
     end
-    table.insert(latex_lines, table.concat(header_cells, " & ") .. " \\\\")
     table.insert(latex_lines, "\\hline")
   end
   
@@ -47,8 +50,12 @@ function Table(tbl)
     for _, body in ipairs(tbl.bodies) do
       for _, row in ipairs(body.body) do
         local row_cells = {}
-        for _, cell in ipairs(row.cells) do
-          local cell_text = pandoc.utils.stringify(cell.contents)
+        for i = 1, num_cols do
+          local cell = row.cells[i]
+          local cell_text = ""
+          if cell then
+            cell_text = pandoc.utils.stringify(cell.contents)
+          end
           table.insert(row_cells, cell_text)
         end
         table.insert(latex_lines, table.concat(row_cells, " & ") .. " \\\\")
