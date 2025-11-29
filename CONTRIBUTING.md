@@ -17,9 +17,6 @@ We welcome rubrics for roles not yet covered, such as:
 - Technical Lead
 - Engineering Director
 - VP of Engineering
-- Platform Engineer
-- Site Reliability Engineer
-- Data Engineer
 - Other engineering leadership or senior IC roles
 
 ### Example Question Banks
@@ -96,27 +93,10 @@ Each competency area must include:
 
 ### 3. Scorecard with Behavioural Anchors
 
-The scorecard must define what each score (1–5) looks like for each competency area. Anchors should describe observable behaviours or evidence, not subjective judgments.
+The scorecard is a fixed format, with a score of 1-5 for each of the 5 competencies.
 
-| Score | Meaning |
-|-------|---------|
-| 1 | No evidence of competency |
-| 2 | Limited evidence; significant gaps |
-| 3 | Adequate evidence; some gaps or inconsistencies |
-| 4 | Strong evidence; minor gaps only |
-| 5 | Exceptional evidence; exceeds expectations |
-
-Adapt these descriptions to each competency area with specific behavioural indicators.
-
-### 4. Seniority Thresholds
-
-Define score thresholds for each seniority level the rubric covers. For example:
-
-| Level | Threshold |
-|-------|-----------|
-| Mid-level | 15+ |
-| Senior | 20+ |
-| Lead | 23+ |
+Score thresholds for different seniority levels can be included. For example:
+**Thresholds:** _15+_ is a pass, _20+_ is a pass at senior level
 
 ### 5. No Embedded Questions
 
