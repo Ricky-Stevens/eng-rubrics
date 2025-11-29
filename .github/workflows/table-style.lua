@@ -2,6 +2,16 @@
 -- Replaces Pandoc tables with custom styled LaTeX tables
 -- Blue header row, vertical borders, proper cell padding
 
+-- Escape special LaTeX characters
+local function escape_latex(text)
+  -- Escape & which is a column separator in LaTeX tables
+  text = text:gsub("&", "\\&")
+  -- Escape other special chars if needed
+  text = text:gsub("%%", "\\%%")
+  text = text:gsub("#", "\\#")
+  return text
+end
+
 function Table(tbl)
   if not FORMAT:match('latex') then
     return tbl
@@ -36,7 +46,7 @@ function Table(tbl)
         local cell = row.cells[i]
         local cell_text = ""
         if cell then
-          cell_text = pandoc.utils.stringify(cell.contents)
+          cell_text = escape_latex(pandoc.utils.stringify(cell.contents))
         end
         table.insert(header_cells, "\\textcolor{white}{\\textbf{" .. cell_text .. "}}")
       end
@@ -54,7 +64,7 @@ function Table(tbl)
           local cell = row.cells[i]
           local cell_text = ""
           if cell then
-            cell_text = pandoc.utils.stringify(cell.contents)
+            cell_text = escape_latex(pandoc.utils.stringify(cell.contents))
           end
           table.insert(row_cells, cell_text)
         end
