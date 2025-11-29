@@ -2,11 +2,9 @@
 
 ## The Problem
 
-Engineering hiring is broken.
+Too often, interview decisions come down to gut feel, personal preference, and whoever speaks most confidently in the debrief. Interviewers favour different things. Opinions clash. There's no shared definition of "good"-so everyone believes they're right, and the loudest voice wins.
 
-Too often, interview decisions come down to gut feel, personal preference, and whoever speaks most confidently in the debrief. Interviewers favour different things. Opinions clash. There's no shared definition of "good"—so everyone believes they're right, and the loudest voice wins.
-
-This creates inconsistent, unfair processes that don't reliably identify the strongest candidates. Worse, it's legally indefensible. When challenged, organisations can't point to objective criteria—only subjective impressions.
+This creates inconsistent, unfair processes that don't reliably identify the strongest candidates. Worse, it's legally indefensible. When challenged, organisations can't point to objective criteria-only subjective impressions.
 
 The result: the wrong people get hired, the right people get overlooked, and teams suffer.
 
@@ -18,10 +16,12 @@ eng-rubrics provides structured, standardised interview rubrics for assessing en
 
 Each rubric is:
 
-- **2 pages maximum** — concise enough to use, detailed enough to be rigorous
-- **5 questions** — focused on track record and demonstrated experience
-- **1 scorecard** — with behavioural anchors and seniority thresholds
-- **Aligned to external frameworks** — not internal opinions
+- **2 pages maximum** - concise enough to use, detailed enough to be rigorous
+- **5 competency areas** - defining what to assess, not how to ask it
+- **1 scorecard** - with behavioural anchors and seniority thresholds
+- **Aligned to external frameworks** - not internal opinions
+
+Rubrics define the *criteria*, not the questions. Interviewers choose how to probe each competency area. This keeps assessments consistent without making interviews predictable or gameable.
 
 These rubrics don't assess technical problem-solving or culture fit. Those belong in other interview stages. eng-rubrics focuses on what's often the weakest part of the hiring process: evaluating experience, leadership, professional competence, and track record.
 
@@ -31,14 +31,14 @@ These rubrics don't assess technical problem-solving or culture fit. Those belon
 
 ### 1. Experience, Not Theory
 
-We use the STAR method (Situation, Task, Action, Result) because it tests what candidates have *actually done*—not what they *think* they'd do. If they haven't done it, they haven't done it. Track record matters.
+We use the STAR method (Situation, Task, Action, Result) because it tests what candidates have *actually done*-not what they *think* they'd do. If they haven't done it, they haven't done it. Track record matters.
 
 ### 2. Standards, Not Opinions
 
 Every rubric aligns to an established, externally-owned professional framework:
 
-- **[UK-SPEC](https://www.engc.org.uk/standards-guidance/standards/uk-spec/)** — The UK Standard for Professional Engineering Competence, maintained by the Engineering Council
-- **[SFIA](https://sfia-online.org/)** — The Skills Framework for the Information Age, the global standard for digital skills
+- **[UK-SPEC](https://www.engc.org.uk/standards-guidance/standards/uk-spec/)** - The UK Standard for Professional Engineering Competence, maintained by the Engineering Council
+- **[SFIA](https://sfia-online.org/)** - The Skills Framework for the Information Age, the global standard for digital skills
 
 These frameworks define what "good" looks like. We reference them so interviewers aren't inventing criteria based on personal preference.
 
@@ -52,7 +52,7 @@ Where possible, a single rubric covers multiple seniority levels through scoring
 
 ### 5. Guidance, Not Automation
 
-These rubrics inform decisions—they don't make them. The scorecard gives interviewers structured data to compare candidates fairly. The final hiring decision remains human.
+These rubrics inform decisions-they don't make them. The scorecard gives interviewers structured data to compare candidates fairly. The final hiring decision remains human.
 
 ---
 
@@ -78,7 +78,7 @@ These rubrics inform decisions—they don't make them. The scorecard gives inter
 
 eng-rubrics is open source and contribution-welcome. We invite practitioners to submit rubrics for roles not yet covered, provided they:
 
-- Follow the standard format (2 pages, 5 questions, 1 scorecard)
+- Follow the standard format (2 pages, 5 competency areas, 1 scorecard)
 - Align to an established external framework (UK-SPEC, SFIA, or equivalent)
 - Focus on experience and competence, not technical puzzles or culture fit
 - Include behavioural anchors for scoring, not just "good/bad" labels
