@@ -16,17 +16,15 @@
 % ============================================
 \usepackage{titlesec}
 
-% H1 - Main title (blue, large, with rule below)
+% H1 - Main title (blue, large, no rule)
 \titleformat{\section}
   {\color{engblue}\normalfont\Large\bfseries}
   {}{0em}{}
-  [\color{engblue}\titlerule]
 
-% H2 - Competency areas (blue, medium, with rule below)
+% H2 - Competency areas (blue, medium, no rule)
 \titleformat{\subsection}
   {\color{engblue}\normalfont\large\bfseries}
   {}{0em}{}
-  [\color{engblue}\vspace{2pt}\titlerule]
 
 % H3 - Sub-sections like "Scoring Matrix" (blue, normal size)
 \titleformat{\subsubsection}
@@ -63,6 +61,9 @@
 % ============================================
 % PARAGRAPH & LIST STYLING
 % ============================================
+\usepackage{setspace}
+\setstretch{1.15}
+
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 
