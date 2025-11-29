@@ -52,18 +52,31 @@
 \usepackage{array}
 \usepackage{colortbl}
 \usepackage{float}
+\usepackage{etoolbox}
 
 % Table cell padding
-\renewcommand{\arraystretch}{1.4}
-\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.6}
+\setlength{\tabcolsep}{10pt}
 
-% Redefine longtable to have borders and blue header
+% Set border color
+\arrayrulecolor{borderblue}
+
+% Redefine toprule/midrule/bottomrule colors
+\let\oldtoprule\toprule
+\let\oldmidrule\midrule  
+\let\oldbottomrule\bottomrule
+
+\renewcommand{\toprule}{\arrayrulecolor{borderblue}\oldtoprule\arrayrulecolor{borderblue}}
+\renewcommand{\midrule}{\arrayrulecolor{borderblue}\oldmidrule}
+\renewcommand{\bottomrule}{\arrayrulecolor{borderblue}\oldbottomrule}
+
+% Style header row - blue background with white bold text
+\newcommand{\headerstyle}{\rowcolor{tablebg}\bfseries\color{white}}
+
+% Apply to longtable headers
 \AtBeginEnvironment{longtable}{%
-  \rowcolors{2}{white}{lightgray}%
+  \rowcolor{tablebg}%
 }
-
-% Make header row blue with white text
-\newcommand{\tableheaderrow}{\rowcolor{tablebg}\color{white}\bfseries}
 
 % ============================================
 % PARAGRAPH & LIST STYLING
