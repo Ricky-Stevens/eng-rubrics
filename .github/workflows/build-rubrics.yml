@@ -8,6 +8,9 @@ on:
       - '!rubrics/_TEMPLATE.md'
   workflow_dispatch:
 
+permissions:
+  contents: write  # allow GITHUB_TOKEN to create releases
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,6 +33,7 @@ jobs:
 
       - name: Convert rubrics to PDF and DOCX
         run: |
+          shopt -s nullglob
           for file in rubrics/*.md; do
             # Skip the template
             if [[ "$file" == *"_TEMPLATE"* ]]; then
@@ -37,20 +41,16 @@ jobs:
             fi
             
             filename=$(basename "$file" .md)
-            
             echo "Converting $filename..."
             
-            # Create role-specific output folder
             mkdir -p "dist/${filename}"
             
-            # Generate PDF
             pandoc "$file" \
               -o "dist/${filename}/${filename}.pdf" \
               --pdf-engine=pdflatex \
               -V geometry:margin=1in \
               -V fontsize=11pt
             
-            # Generate DOCX
             pandoc "$file" \
               -o "dist/${filename}/${filename}.docx"
             
@@ -62,7 +62,7 @@ jobs:
         with:
           name: rubrics
           path: dist/
-          retention-days: 7  # Short retention - Releases are permanent
+          retention-days: 7
 
       - name: Get current date
         id: date
@@ -77,7 +77,9 @@ jobs:
             Automated build of eng-rubrics.
             
             Download the PDF or DOCX version for each role below.
-          files: dist/*
+          files: |
+            dist/**/*.pdf
+            dist/**/*.docx
           draft: false
           prerelease: false
         env:
