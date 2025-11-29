@@ -2,15 +2,13 @@
 
 [1–2 sentences describing the role and its core purpose.]
 
-Encourage the candidate to use the **STAR method** (Situation, Task, Action, Result). This assessment is about demonstrated experience, not theoretical understanding.
+Candidates should use the **STAR method** (Situation, Task, Action, Result). This assessment is about demonstrated experience, not theoretical understanding.
 
 ---
 
-## Competency Areas
+## A - [Competency Area Title]
+#### **00:10** - [FRAMEWORK] [CODE] Level [X–Y]
 
-### A — [Competency Area Title] · [FRAMEWORK] [CODE] Level [X–Y]
-
-**Description:**  
 [2–3 sentences describing what this competency covers and why it matters for the role.]
 
 **What to look for:**
@@ -23,9 +21,9 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 
 ---
 
-### B — [Competency Area Title] · [FRAMEWORK] [CODE] Level [X–Y]
+## B - [Competency Area Title]
+#### **00:15** - [FRAMEWORK] [CODE] Level [X–Y]
 
-**Description:**  
 [2–3 sentences describing what this competency covers and why it matters for the role.]
 
 **What to look for:**
@@ -38,9 +36,9 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 
 ---
 
-### C — [Competency Area Title] · [FRAMEWORK] [CODE] Level [X–Y]
+## C - [Competency Area Title]
+#### **00:20** - [FRAMEWORK] [CODE] Level [X–Y]
 
-**Description:**  
 [2–3 sentences describing what this competency covers and why it matters for the role.]
 
 **What to look for:**
@@ -53,9 +51,9 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 
 ---
 
-### D — [Competency Area Title] · [FRAMEWORK] [CODE] Level [X–Y]
+## D - [Competency Area Title]
+#### **00:25** - [FRAMEWORK] [CODE] Level [X–Y]
 
-**Description:**  
 [2–3 sentences describing what this competency covers and why it matters for the role.]
 
 **What to look for:**
@@ -68,9 +66,9 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 
 ---
 
-### E — [Competency Area Title] · [FRAMEWORK] [CODE] Level [X–Y]
+## E - [Competency Area Title]
+#### **00:30** - [FRAMEWORK] [CODE] Level [X–Y]
 
-**Description:**  
 [2–3 sentences describing what this competency covers and why it matters for the role.]
 
 **What to look for:**
@@ -84,32 +82,12 @@ Encourage the candidate to use the **STAR method** (Situation, Task, Action, Res
 ---
 
 ## Scoring Matrix
+**Thresholds:** [Any threshold information for consistent scoring]
 
 | Competency | 1 | 2 | 3 | 4 | 5 |
 |------------|---|---|---|---|---|
-| **A** — [Title] | | | | | |
-| **B** — [Title] | | | | | |
-| **C** — [Title] | | | | | |
-| **D** — [Title] | | | | | |
-| **E** — [Title] | | | | | |
-
----
-
-## Scorecard
-
-| Score | Definition |
-|-------|------------|
-| **1** | No evidence. Candidate cannot demonstrate experience in this area. |
-| **2** | Limited evidence. Candidate describes the concept but examples are vague, theoretical, or from observation rather than direct experience. |
-| **3** | Adequate evidence. Candidate demonstrates experience with some gaps. Examples may lack depth, recency, or scale appropriate to the role. |
-| **4** | Strong evidence. Candidate demonstrates clear, relevant experience with specific examples. Minor gaps only. |
-| **5** | Exceptional evidence. Candidate demonstrates deep experience with multiple strong examples. Demonstrates impact beyond their immediate scope. |
-
----
-
-## Seniority Thresholds
-
-| Level | Threshold |
-|-------|-----------|
-| **[Level 1]** | [X]+ |
-| **[Level 2]** | [Y]+ |
+| **A** - [Competency Area Title] | | | | | |
+| **B** - [Competency Area Title] | | | | | |
+| **C** - [Competency Area Title] | | | | | |
+| **D** - [Competency Area Title] | | | | | |
+| **E** - [Competency Area Title] | | | | | |
