@@ -51,16 +51,13 @@ jobs:
             mkdir -p "dist/${filename}"
 
             # ---------- PDF ----------
-            # Styled with header.tex for blue headings, rules, table colors
-            # Uses table-style.lua for blue table headers with borders
+            # Styled with header.tex for blue headings, rules
             pandoc "$file" \
               -o "dist/${filename}/${filename}.pdf" \
               --pdf-engine=xelatex \
               --include-in-header=.github/workflows/header.tex \
-              --lua-filter=.github/workflows/table-style.lua \
               -V geometry:"top=5mm,bottom=5mm,left=5mm,right=5mm" \
-              -V fontsize=10pt \
-              -V tables=true
+              -V fontsize=10pt
 
             # ---------- DOCX ----------
             # Uses reference.docx for Arial font, margins, table styling
