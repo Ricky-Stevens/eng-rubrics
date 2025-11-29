@@ -29,7 +29,9 @@ jobs:
           sudo apt-get install -y \
             texlive-xetex \
             texlive-latex-recommended \
-            texlive-latex-extra
+            texlive-latex-extra \
+            texlive-fonts-extra \
+            lmodern
 
       - name: Create output directory
         run: mkdir -p dist
@@ -49,19 +51,16 @@ jobs:
             mkdir -p "dist/${filename}"
 
             # ---------- PDF ----------
-            # Tight margins + DejaVu Sans main font
+            # Styled with header.tex for blue headings, rules, table colors
             pandoc "$file" \
               -o "dist/${filename}/${filename}.pdf" \
               --pdf-engine=xelatex \
-              -V geometry:"top=5mm,bottom=5mm,left=5mm,right=5mm" \
-              -V mainfont="DejaVu Sans" \
-              -V fontsize=11pt
+              --include-in-header=.github/workflows/header.tex \
+              -V geometry:"top=12mm,bottom=12mm,left=12mm,right=12mm" \
+              -V fontsize=10pt
 
             # ---------- DOCX ----------
-            # Uses .github/workflows/reference.docx for:
-            # - Arial font
-            # - Margins
-            # - Table style (width, borders, header row colour, etc.)
+            # Uses reference.docx for Arial font, margins, table styling
             pandoc "$file" \
               -o "dist/${filename}/${filename}.docx" \
               --reference-doc=.github/workflows/reference.docx
@@ -74,7 +73,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           if [[ -n "$(git status --porcelain dist)" ]]; then
             git add dist
             git commit -m "Update dist rubrics (run ${{ github.run_number }})"
