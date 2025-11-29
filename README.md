@@ -18,21 +18,23 @@ Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries 
 
 ## Available Rubrics
 
-| Role | Status |
-|------|--------|
-| Engineering Manager | 🚧 In Progress |
-| Senior Engineer | 📋 Planned |
-| Staff Engineer | 📋 Planned |
-| Head of Engineering | 📋 Planned |
+| Role | Framework | Download |
+|------|-----------|----------|
+| [Engineering Manager](rubrics/engineering-manager.md) | SFIA 9 | [Latest Release](../../releases/latest) |
+| Senior Engineer | TBD | 📋 Planned |
+| Staff Engineer | TBD | 📋 Planned |
+| Head of Engineering | UK-SPEC | 📋 Planned |
+
+PDF and DOCX versions are automatically generated on each merge to `main` and published to [Releases](../../releases).
 
 ---
 
 ## Rubric Structure
 
-Every rubric follows the same format:
+Every rubric follows the same format (see [template](rubrics/_TEMPLATE.md)):
 
 - **Page 1:** 5 competency areas with evaluation criteria and behavioural anchors
-- **Page 2:** Scoring rubric with seniority thresholds (1–5 scale)
+- **Page 2:** Scoring matrix with seniority thresholds
 
 Rubrics define *what* to assess, not *how* to ask. Interviewers choose their own questions using the STAR method.
 
