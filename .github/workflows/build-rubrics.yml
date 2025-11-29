@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # allow GITHUB_TOKEN to create releases
+  contents: write  # allow GITHUB_TOKEN to push commits
 
 jobs:
   build:
@@ -26,7 +26,10 @@ jobs:
 
       - name: Install LaTeX (for PDF generation)
         run: |
-          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-latex-recommended \
+            texlive-latex-extra
 
       - name: Create output directory
         run: mkdir -p dist
@@ -44,43 +47,38 @@ jobs:
             echo "Converting $filename..."
             
             mkdir -p "dist/${filename}"
-            
+
+            # ---------- PDF ----------
+            # Tight margins + DejaVu Sans main font
             pandoc "$file" \
               -o "dist/${filename}/${filename}.pdf" \
-              --pdf-engine=pdflatex \
-              -V geometry:margin=1in \
+              --pdf-engine=xelatex \
+              -V geometry:"top=10mm,bottom=10mm,left=10mm,right=10mm" \
+              -V mainfont="DejaVu Sans" \
               -V fontsize=11pt
-            
+
+            # ---------- DOCX ----------
+            # Uses .github/workflows/reference.docx for:
+            # - Arial font
+            # - Margins
+            # - Table style (width, borders, header row colour, etc.)
             pandoc "$file" \
-              -o "dist/${filename}/${filename}.docx"
-            
+              -o "dist/${filename}/${filename}.docx" \
+              --reference-doc=.github/workflows/reference.docx
+
             echo "✓ Generated dist/${filename}/${filename}.pdf and .docx"
           done
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: rubrics
-          path: dist/
-          retention-days: 7
+      - name: Commit dist back to repository
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Get current date
-        id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: build-${{ github.run_number }}
-          name: Rubrics Build ${{ steps.date.outputs.date }}
-          body: |
-            Automated build of eng-rubrics.
-            
-            Download the PDF or DOCX version for each role below.
-          files: |
-            dist/**/*.pdf
-            dist/**/*.docx
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if [[ -n "$(git status --porcelain dist)" ]]; then
+            git add dist
+            git commit -m "Update dist rubrics (run ${{ github.run_number }})"
+            git push
+          else
+            echo "No changes in dist; nothing to commit."
+          fi
