@@ -1,8 +1,8 @@
 # Engineering Manager
 
-Engineering Managers are responsible for the performance, growth, and delivery of an engineering team. They balance people leadership with technical direction, ensuring their team delivers quality software while developing individual engineers.
+Responsible for the performance, growth, and delivery of an engineering team. Balances people leadership with technical direction, ensuring teams deliver quality solutions while developing individual engineers.
 
-Encourage the candidate to use the **STAR method** (Situation, Task, Action, Result). This assessment is about demonstrated experience, not theoretical understanding.
+Candidates should use the **STAR method** (Situation, Task, Action, Result). This assessment is about demonstrated experience, not theoretical understanding.
 
 ---
 
@@ -43,7 +43,7 @@ The ability to provide technical leadership without being hands-on. This include
 ## C - Delivery & Accountability
 #### **00:20** - SFIA DLMG Level 5–6
 
-The ability to own delivery outcomes for the team. This includes planning, prioritisation, managing dependencies, and ensuring the team meets commitments while maintaining sustainable pace.
+The ability to own delivery outcomes for the team. This includes planning, prioritisation, managing dependencies, and ensuring the team meets commitments while maintaining a sustainable pace.
 
 **What to look for:**
 
