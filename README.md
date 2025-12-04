@@ -12,7 +12,8 @@ Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries 
 
 ## How To Use These Rubrics
 
-*TODO: Guidance for interviewers, hiring managers, and HR teams.*
+- **[HOW_TO_USE](HOW_TO_USE.md)** — Structured interview process, time allocation, scoring methodology, and post-interview debrief.
+- **[INTERVIEW_TIPS](INTERVIEW_TIPS.md)** — Behavioral interviewing skills: building rapport, reading signals, understanding candidate questions, and writing fair feedback.
 
 ---
 
