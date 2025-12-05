@@ -128,6 +128,32 @@ Provide the scoring breakdown - detailing how they scored against each competenc
 - **No:** Close call, but they didn't quite make the threshold for this role.
 - **Strong No:** There was a clear misalignment with competencies
 
+Example:
+> Interview with Joe Blogs - Engineering Manager - 2025-12-05
+>
+> Strengths:
+> - [observation]
+> - [observation]
+> - [observation]
+>
+> Considerations:
+> - [observation]
+> - [observation]
+> - [observation]
+>
+> Scoring:
+> - A: [Compitency A] - 3/5
+> - B: [Compitency B] - 3/5
+> - C: [Compitency C] - 5/5
+> - D: [Compitency D] - 4/5
+> - E: [Compitency E] - 3/5
+>
+> Final score - 18/25. The threshold is for this role is 20.
+>
+> Recommendation: No
+>
+> Candidate didn't meet the bar because [observations]
+
 ---
 
 ## Common Questions
