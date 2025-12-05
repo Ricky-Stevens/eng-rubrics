@@ -19,9 +19,10 @@ Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries 
 
 ## Available Rubrics
 
-| Role | Framework | Markdown | PDF | Docx |
-|------|-----------|----------|----------|----------|
-| Engineering Manager | SFIA 9 | [.MD](rubrics/engineering-manager.md) | [.PDF](dist/engineering-manager/engineering-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/engineering-manager/engineering-manager.docx) |
+| Role                | Framework | Markdown                              | PDF | Docx | Questions                                        |
+|---------------------|-----------|---------------------------------------|----------|----------|--------------------------------------------------|
+| Head of Engineering | UK-SPEC   | [.MD](rubrics/head-of-engineering.md) | [.PDF](dist/head-of-engineering/head-of-engineering.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/head-of-engineering/head-of-engineering.docx) | [.MD](questions/head-of-engineering.md)          |
+| Engineering Manager | SFIA 9    | [.MD](rubrics/engineering-manager.md) | [.PDF](dist/engineering-manager/engineering-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/engineering-manager/engineering-manager.docx) | [.MD](questions/engineering-manager.md) |
 
 ---
 
