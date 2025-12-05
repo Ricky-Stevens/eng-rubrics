@@ -17,15 +17,18 @@ Read the **[Manifesto](MANIFESTO.md)** - the principles, vision, and boundaries 
 
 ---
 
+
 ## Available Rubrics
 
-| Role                       | Framework | Markdown                                     | PDF | Docx | Questions                                           |
-|----------------------------|-----------|----------------------------------------------|----------|----------|-----------------------------------------------------|
-| Head of Engineering        | UK-SPEC   | [.MD](rubrics/head-of-engineering.md)        | [.PDF](dist/head-of-engineering/head-of-engineering.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/head-of-engineering/head-of-engineering.docx) | [.MD](questions/head-of-engineering.md)             |
-| Engineering Manager        | SFIA 9    | [.MD](rubrics/engineering-manager.md)        | [.PDF](dist/engineering-manager/engineering-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/engineering-manager/engineering-manager.docx) | [.MD](questions/engineering-manager.md)             |
-| Principal Engineer         | SFIA 9    | [.MD](rubrics/principal-engineer.md)         | [.PDF](dist/principal-engineer/principal-engineer.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/principal-engineer/principal-engineer.docx) | [.MD](questions/principal-engineer.md)              |
-| Tech Lead                  | SFIA 9    | [.MD](rubrics/tech-lead.md)                  | [.PDF](dist/tech-lead/tech-lead.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/tech-lead/tech-lead.docx) | [.MD](questions/tech-lead.md)                       |
-| Technical Product Manager  | SFIA 9    | [.MD](rubrics/technical-product-manager.md)  | [.PDF](dist/technical-product-manager/technical-product-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/technical-product-manager/technical-product-manager.docx) | [.MD](questions/technical-product-manager.md)       |
+| Role                       | Framework      | Markdown                                     | PDF | Docx | Questions                                           |
+|----------------------------|----------------|----------------------------------------------|----------|----------|-----------------------------------------------------|
+| VP of Engineering          | UK-SPEC / SFIA | [.MD](rubrics/vp-of-engineering.md)          | [.PDF](dist/vp-of-engineering/vp-of-engineering.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/vp-of-engineering/vp-of-engineering.docx) | [.MD](questions/vp-of-engineering.md)               |
+| Director of Engineering    | UK-SPEC / SFIA | [.MD](rubrics/director-of-engineering.md)    | [.PDF](dist/director-of-engineering/director-of-engineering.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/director-of-engineering/director-of-engineering.docx) | [.MD](questions/director-of-engineering.md)         |
+| Head of Engineering        | UK-SPEC        | [.MD](rubrics/head-of-engineering.md)        | [.PDF](dist/head-of-engineering/head-of-engineering.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/head-of-engineering/head-of-engineering.docx) | [.MD](questions/head-of-engineering.md)             |
+| Engineering Manager        | SFIA 9         | [.MD](rubrics/engineering-manager.md)        | [.PDF](dist/engineering-manager/engineering-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/engineering-manager/engineering-manager.docx) | [.MD](questions/engineering-manager.md)             |
+| Principal Engineer         | SFIA 9         | [.MD](rubrics/principal-engineer.md)         | [.PDF](dist/principal-engineer/principal-engineer.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/principal-engineer/principal-engineer.docx) | [.MD](questions/principal-engineer.md)              |
+| Tech Lead                  | SFIA 9         | [.MD](rubrics/tech-lead.md)                  | [.PDF](dist/tech-lead/tech-lead.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/tech-lead/tech-lead.docx) | [.MD](questions/tech-lead.md)                       |
+| Technical Product Manager  | SFIA 9         | [.MD](rubrics/technical-product-manager.md)  | [.PDF](dist/technical-product-manager/technical-product-manager.pdf) |  [.DOCX](https://raw.githubusercontent.com/Ricky-Stevens/eng-rubrics/main/dist/technical-product-manager/technical-product-manager.docx) | [.MD](questions/technical-product-manager.md)       |
 
 ---
 
