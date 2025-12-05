@@ -13,8 +13,6 @@ Before contributing, please read the [Manifesto](MANIFESTO.md). It defines the p
 We welcome rubrics for roles not yet covered, such as:
 
 - Staff Engineer
-- Principal Engineer
-- Technical Lead
 - Engineering Director
 - VP of Engineering
 - Other engineering leadership or senior IC roles
