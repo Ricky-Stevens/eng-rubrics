@@ -110,23 +110,23 @@ Reference the rubric's "What to look for" section in each competency. Does their
 
 ### **Step 2: Collective Debrief**
 
-
 **For each competency:**
 1. **Highlight alignment or disagreement.** "I scored them 4 on Competency 1, but you scored 3. What did you see different?"
 2. **Each interviewer justifies their score:** "I scored them a 3 because they gave a solid example, but they didn't articulate the impact or outcome clearly."
 3. **Discuss the evidence:** What did they actually say? How does it map to the rubric criteria?
 4. **Converge on a score:** Do you move the 3 to a 4, or do the 4s come down? The goal is thoughtful consensus, not averaging. Use evidence to guide the decision.
 
-### **Step 3: Final Score & Recommendation**
+### **Step 3: Summary & Recommendation**
 
-Once you've agreed on scores for all competencies, **total them and refer to the rubric's scoring thresholds** .
+Record the candidates' strengths from the interview, and then record any considerations you had on their performance.
+
+Provide the scoring breakdown - detailing how they scored against each competency. Provide the final score, and compare it against the threshold for that role.
 
 **Make a recommendation:**
-- **Yes:** Consensus that they meet the bar for the role
-- **Maybe:** Close call, want more information (consider another interview, reference check, or trial project)
-- **No:** Clear misalignment with competencies
-
-**Document your reasoning:** Write 2-3 sentences per competency explaining your score and flagging any areas of concern or strength.
+- **Strong Yes:** Consensus that they clearly exceed the bar for the role
+- **Yes:** They passed, but there were some areas of weakness to probe in the next rounds
+- **No:** Close call, but they didn't quite make the threshold for this role.
+- **Strong No:** There was a clear misalignment with competencies
 
 ---
 
